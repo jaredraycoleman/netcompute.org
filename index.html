@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="NetCompute 2026: First Workshop on Computation over Heterogeneous Networks at IEEE INFOCOM 2026, Tokyo, Japan - May 18, 2026">
+    <meta name="keywords" content="INFOCOM, network computing, edge AI, distributed systems, heterogeneous networks, IoT, satellite networks, mobile computing">
+    <title>NetCompute 2026 - IEEE INFOCOM Workshop</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="container">
+            <div class="nav-brand">NetCompute 2026</div>
+            <button class="nav-toggle" id="navToggle" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#scope">Scope & Topics</a></li>
+                <li><a href="#cfp">CFP</a></li>
+                <li><a href="#dates">Important Dates</a></li>
+                <li><a href="#organizers">Organizers</a></li>
+                <li><a href="#venue">Venue</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">NetCompute 2026</h1>
+            <p class="hero-subtitle">First Workshop on Computation over Heterogeneous Networks</p>
+            <p class="hero-meta">In conjunction with IEEE INFOCOM 2026</p>
+            <p class="hero-location">Tokyo, Japan | May 18, 2026</p>
+            <div class="hero-buttons">
+                <a href="#cfp" class="btn btn-primary">Call for Papers</a>
+                <a href="#" class="btn btn-secondary">Submit Paper</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About/Scope Section -->
+    <section id="scope" class="section section-white">
+        <div class="container">
+            <h2 class="section-title">Workshop Scope</h2>
+            <div class="section-divider"></div>
+            <div class="scope-content">
+                <p class="lead">
+                    NetCompute 2026 explores the intersection of computation and communication networks,
+                    where the structure and dynamics of networks fundamentally shape how we process, learn,
+                    and make decisions from data.
+                </p>
+                <p>
+                    As computing moves beyond centralized data centers to edge devices, IoT sensors, satellites,
+                    and mobile platforms, the network itself becomes a critical constraint and enabler for
+                    distributed intelligence. This workshop brings together researchers and practitioners to
+                    address the unique challenges of computation over heterogeneous networks, including:
+                </p>
+                <ul class="scope-list">
+                    <li><strong>Communication-constrained computation:</strong> Optimizing algorithms when bandwidth, latency, and reliability vary across network segments</li>
+                    <li><strong>Network heterogeneity:</strong> Managing diverse device capabilities, topologies, and communication protocols</li>
+                    <li><strong>Distributed intelligence:</strong> Enabling learning, inference, and optimization across networked systems</li>
+                    <li><strong>Real-world deployments:</strong> Bridging theory and practice in edge AI, federated learning, and networked control</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call for Papers -->
+    <section id="cfp" class="section section-gray">
+        <div class="container">
+            <h2 class="section-title">Call for Papers</h2>
+            <div class="section-divider"></div>
+            <p class="cfp-intro">
+                We invite original research contributions, position papers, and work-in-progress reports
+                addressing computation over heterogeneous networks. Topics of interest include but are not limited to:
+            </p>
+
+            <div class="topics-grid">
+                <div class="topic-card">
+                    <div class="topic-header" onclick="toggleTopic(this)">
+                        <h3>In-Network Compute</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="topic-content">
+                        <p>Architectures, protocols, and algorithms for performing computation within the network infrastructure itself, including programmable switches, routers, and edge servers.</p>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-header" onclick="toggleTopic(this)">
+                        <h3>Topology-Aware Scheduling</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="topic-content">
+                        <p>Task scheduling and resource allocation algorithms that leverage network topology, latency patterns, and bandwidth constraints to optimize distributed computation.</p>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-header" onclick="toggleTopic(this)">
+                        <h3>Communication-Aware Learning</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="topic-content">
+                        <p>Machine learning algorithms designed with communication constraints in mind, including gradient compression, local training strategies, and bandwidth-efficient updates.</p>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-header" onclick="toggleTopic(this)">
+                        <h3>Federated and Split Learning</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="topic-content">
+                        <p>Distributed learning paradigms that partition models and data across network nodes while managing privacy, communication overhead, and model synchronization.</p>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-header" onclick="toggleTopic(this)">
+                        <h3>Edge Intelligence & Inference</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="topic-content">
+                        <p>Deployment of AI models at the network edge, including model compression, edge-cloud collaboration, and real-time inference under resource constraints.</p>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-header" onclick="toggleTopic(this)">
+                        <h3>Satellite & Space Networks</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="topic-content">
+                        <p>Computation strategies for LEO satellite constellations, space-terrestrial integration, and orbital edge computing with intermittent connectivity.</p>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-header" onclick="toggleTopic(this)">
+                        <h3>IoT & Sensor Networks</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="topic-content">
+                        <p>Distributed processing in resource-constrained IoT environments, sensor fusion, and energy-efficient computation for battery-powered devices.</p>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-header" onclick="toggleTopic(this)">
+                        <h3>Network-Aware Optimization</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="topic-content">
+                        <p>Optimization algorithms that explicitly account for network structure, communication costs, and dynamic connectivity patterns.</p>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-header" onclick="toggleTopic(this)">
+                        <h3>Mobile & Vehicular Computing</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="topic-content">
+                        <p>Computation in mobile networks, V2X communication, autonomous vehicle coordination, and handoff-aware task migration.</p>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-header" onclick="toggleTopic(this)">
+                        <h3>Wireless Networks & Computation</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="topic-content">
+                        <p>Joint design of wireless protocols and computation strategies, over-the-air computation, and wireless federated learning.</p>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-header" onclick="toggleTopic(this)">
+                        <h3>Privacy & Security</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="topic-content">
+                        <p>Privacy-preserving computation, secure aggregation, differential privacy in distributed settings, and attack-resilient networked systems.</p>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-header" onclick="toggleTopic(this)">
+                        <h3>Benchmarks & Testbeds</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="topic-content">
+                        <p>Evaluation frameworks, standardized benchmarks, simulation platforms, and real-world testbeds for networked computing systems.</p>
+                    </div>
+                </div>
+
+                <div class="topic-card">
+                    <div class="topic-header" onclick="toggleTopic(this)">
+                        <h3>Applications & Case Studies</h3>
+                        <span class="toggle-icon">+</span>
+                    </div>
+                    <div class="topic-content">
+                        <p>Real-world deployments and applications in smart cities, industrial IoT, healthcare monitoring, environmental sensing, and other domains.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="submission-info">
+                <h3>Submission Guidelines</h3>
+                <p>Papers should be submitted in IEEE conference format (up to 6 pages, including references).
+                Submissions will be peer-reviewed and selected based on technical quality, novelty, and relevance to the workshop.</p>
+                <a href="#" class="btn btn-primary">Submit Your Paper</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Important Dates -->
+    <section id="dates" class="section section-white">
+        <div class="container">
+            <h2 class="section-title">Important Dates</h2>
+            <div class="section-divider"></div>
+            <div class="dates-timeline">
+                <div class="date-card">
+                    <div class="date-icon">📝</div>
+                    <div class="date-content">
+                        <h3>Paper Submission Deadline</h3>
+                        <p class="date-value">December 29, 2025</p>
+                    </div>
+                </div>
+                <div class="date-card">
+                    <div class="date-icon">📬</div>
+                    <div class="date-content">
+                        <h3>Notification of Acceptance</h3>
+                        <p class="date-value">February 2, 2026</p>
+                    </div>
+                </div>
+                <div class="date-card">
+                    <div class="date-icon">📄</div>
+                    <div class="date-content">
+                        <h3>Camera-Ready Deadline</h3>
+                        <p class="date-value">February 16, 2026</p>
+                    </div>
+                </div>
+                <div class="date-card">
+                    <div class="date-icon">🎤</div>
+                    <div class="date-content">
+                        <h3>Workshop Date</h3>
+                        <p class="date-value">May 18, 2026</p>
+                    </div>
+                </div>
+            </div>
+            <p class="dates-note">All deadlines are 11:59 PM AoE (Anywhere on Earth)</p>
+        </div>
+    </section>
+
+    <!-- Organizers -->
+    <section id="organizers" class="section section-gray">
+        <div class="container">
+            <h2 class="section-title">Workshop Organizers</h2>
+            <div class="section-divider"></div>
+            <div class="organizers-grid">
+                <div class="organizer-card">
+                    <div class="organizer-photo">
+                        <img src="https://2024.msrconf.org/getProfileImage/bhaskarkrishnamachari/1c4938b3-108c-405e-95cc-b6d06d552043/small.jpg?1715091386000" alt="Bhaskar Krishnamachari">
+                    </div>
+                    <h3>Bhaskar Krishnamachari</h3>
+                    <p class="organizer-title">Professor</p>
+                    <p class="organizer-affiliation">University of Southern California</p>
+                    <!-- <div class="organizer-links">
+                        <a href="#" class="organizer-link">🌐 Website</a>
+                        <a href="#" class="organizer-link">📧 Email</a>
+                    </div> -->
+                </div>
+
+                <div class="organizer-card">
+                    <div class="organizer-photo">
+                        <img src="https://media-speakerfile-pre.s3.amazonaws.com/images_avatars/4b68e244ec7d67a7c86b85f6df3f411c1724260388_l.jpg" alt="Jared Coleman">
+                    </div>
+                    <h3>Jared Coleman</h3>
+                    <p class="organizer-title">Assistant Professor</p>
+                    <p class="organizer-affiliation">Loyola Marymount University</p>
+                    <!-- <div class="organizer-links">
+                        <a href="#" class="organizer-link">🌐 Website</a>
+                        <a href="#" class="organizer-link">📧 Email</a>
+                    </div> -->
+                </div>
+
+                <div class="organizer-card">
+                    <div class="organizer-photo">
+                        <img src="https://www.ece.cmu.edu/directory/images/faculty/J/carlee-joewong-800x800.png" alt="Carlee Joe-Wong">
+                    </div>
+                    <h3>Carlee Joe-Wong</h3>
+                    <p class="organizer-title">Associate Professor</p>
+                    <p class="organizer-affiliation">Carnegie Mellon University</p>
+                    <!-- <div class="organizer-links">
+                        <a href="#" class="organizer-link">🌐 Website</a>
+                        <a href="#" class="organizer-link">📧 Email</a>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Venue -->
+    <section id="venue" class="section section-gray">
+        <div class="container">
+            <h2 class="section-title">Venue</h2>
+            <div class="section-divider"></div>
+            <div class="venue-content">
+                <div class="venue-info">
+                    <h3>IEEE INFOCOM 2026</h3>
+                    <p class="venue-location">📍 Tokyo, Japan</p>
+                    <p class="venue-description">
+                        NetCompute 2026 will be held as a workshop in conjunction with IEEE INFOCOM 2026,
+                        the premier conference on computer communications. INFOCOM 2026 takes place in
+                        Tokyo, Japan, offering participants the opportunity to engage with the global
+                        networking research community.
+                    </p>
+                    <a href="https://infocom2026.ieee-infocom.org/" target="_blank" class="btn btn-primary">
+                        Visit INFOCOM 2026 Website
+                    </a>
+                </div>
+                <div class="venue-image">
+                    <img src="https://infocom2026.ieee-infocom.org/sites/default/files/styles/minisite_homepage_slider/public/imgs/group/bg/infocom26-homepage-banners_v1_15apr25_jb-01.png.webp?itok=lxEjkFQW" alt="Tokyo venue">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section section-white">
+        <div class="container">
+            <h2 class="section-title">Contact</h2>
+            <div class="section-divider"></div>
+            <div class="contact-content">
+                <p>For questions about submissions, workshop content, or general inquiries, please contact:</p>
+                <a href="mailto:organizers@netcompute2026.org" class="contact-email">
+                    organizers@netcompute2026.org
+                </a>
+                <!-- <div class="social-links">
+                    <a href="#" class="social-link">Twitter</a>
+                    <a href="#" class="social-link">LinkedIn</a>
+                    <a href="#" class="social-link">GitHub</a>
+                </div> -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>NetCompute 2026</h4>
+                    <p>First Workshop on Computation over Heterogeneous Networks</p>
+                </div>
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul class="footer-links">
+                        <li><a href="#cfp">Call for Papers</a></li>
+                        <li><a href="#dates">Important Dates</a></li>
+                        <li><a href="#organizers">Organizers</a></li>
+                        <li><a href="https://infocom2026.ieee-infocom.org/" target="_blank">IEEE INFOCOM 2026</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h4>Contact</h4>
+                    <p><a href="mailto:organizers@netcompute2026.org">organizers@netcompute2026.org</a></p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 NetCompute Workshop. All rights reserved.</p>
+                <p>In conjunction with <a href="https://infocom2026.ieee-infocom.org/" target="_blank">IEEE INFOCOM 2026</a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
