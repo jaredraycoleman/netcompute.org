@@ -5,12 +5,14 @@ const navbar = document.getElementById('navbar');
 
 navToggle.addEventListener('click', () => {
     navLinks.classList.toggle('active');
+    navToggle.classList.toggle('active');
 });
 
 // Close mobile menu when clicking on a link
 navLinks.querySelectorAll('a').forEach(link => {
     link.addEventListener('click', () => {
         navLinks.classList.remove('active');
+        navToggle.classList.remove('active');
     });
 });
 
