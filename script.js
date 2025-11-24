@@ -243,6 +243,6 @@ function createScrollToTopButton() {
 createScrollToTopButton();
 
 // Console message for developers
-console.log('%cNetCompute 2026', 'font-size: 24px; font-weight: bold; color: #2563eb;');
+console.log('%cNetCompute 2026', 'font-size: 24px; font-weight: bold; color: #1d5075;');
 console.log('%cFirst Workshop on Computation over Heterogeneous Networks', 'font-size: 14px; color: #4b5563;');
 console.log('%cIEEE INFOCOM 2026 | Tokyo, Japan | May 18, 2026', 'font-size: 12px; color: #6b7280;');

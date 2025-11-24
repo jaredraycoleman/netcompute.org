@@ -1,8 +1,8 @@
 /* Root Variables */
 :root {
-    --primary-blue: #2563eb;
-    --dark-blue: #1e40af;
-    --light-blue: #3b82f6;
+    --primary-blue: #1d5075;
+    --dark-blue: #163d58;
+    --light-blue: #2a6892;
     --gray-50: #f9fafb;
     --gray-100: #f3f4f6;
     --gray-200: #e5e7eb;
@@ -144,17 +144,12 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    background: linear-gradient(135deg, var(--dark-blue) 0%, var(--primary-blue) 50%, var(--light-blue) 100%);
-    background-size: 400% 400%;
-    animation: gradientShift 15s ease infinite;
+    background-image: url('images/background.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     overflow: hidden;
     margin-top: 60px;
-}
-
-@keyframes gradientShift {
-    0% { background-position: 0% 50%; }
-    50% { background-position: 100% 50%; }
-    100% { background-position: 0% 50%; }
 }
 
 .hero::before {
@@ -164,9 +159,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-image:
-        radial-gradient(circle at 20% 50%, rgba(255, 255, 255, 0.1) 0%, transparent 50%),
-        radial-gradient(circle at 80% 80%, rgba(255, 255, 255, 0.1) 0%, transparent 50%);
+    background: rgba(0, 0, 0, 0.3);
     pointer-events: none;
 }
 
@@ -176,7 +169,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: rgba(0, 0, 0, 0.1);
+    background: transparent;
 }
 
 .hero-content {
