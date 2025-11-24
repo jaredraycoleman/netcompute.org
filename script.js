@@ -110,6 +110,15 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(card);
     });
 
+    // Animate TPC members
+    const tpcMembers = document.querySelectorAll('.tpc-member');
+    tpcMembers.forEach((member, index) => {
+        member.style.opacity = '0';
+        member.style.transform = 'translateY(20px)';
+        member.style.transition = `opacity 0.5s ease ${index * 0.03}s, transform 0.5s ease ${index * 0.03}s`;
+        observer.observe(member);
+    });
+
     // Animate schedule items
     const scheduleItems = document.querySelectorAll('.schedule-item');
     scheduleItems.forEach((item, index) => {
