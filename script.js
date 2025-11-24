@@ -152,6 +152,13 @@ function setActiveNavLink() {
             if (activeLink) {
                 activeLink.classList.add('active');
             }
+
+            // Update URL hash without scrolling
+            if (history.replaceState) {
+                history.replaceState(null, null, `#${currentId}`);
+            } else {
+                window.location.hash = `#${currentId}`;
+            }
         }
     });
 }
