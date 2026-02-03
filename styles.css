@@ -754,8 +754,29 @@ body {
     color: var(--primary-blue);
 }
 
+/* Accepted Papers Section */
+.papers-list {
+    max-width: 900px;
+    margin: 0 auto;
+    padding-left: 1.5rem;
+}
+
+.papers-list li {
+    margin-bottom: 1rem;
+    line-height: 1.5;
+}
+
+.papers-list li strong {
+    color: var(--gray-900);
+}
+
+.paper-authors {
+    font-size: 0.9rem;
+    color: var(--gray-600);
+}
+
 /* Responsive Design */
-@media (max-width: 768px) {
+@media (max-width: 1024px) {
     .navbar .container {
         padding: 1rem 1.5rem;
     }
