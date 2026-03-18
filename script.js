@@ -127,6 +127,15 @@ document.addEventListener('DOMContentLoaded', () => {
         item.style.transition = `opacity 0.5s ease ${index * 0.1}s, transform 0.5s ease ${index * 0.1}s`;
         observer.observe(item);
     });
+
+    // Animate program items
+    const programItems = document.querySelectorAll('.program-item');
+    programItems.forEach((item, index) => {
+        item.style.opacity = '0';
+        item.style.transform = 'translateX(-20px)';
+        item.style.transition = `opacity 0.5s ease ${index * 0.08}s, transform 0.5s ease ${index * 0.08}s`;
+        observer.observe(item);
+    });
 });
 
 // Active navigation link highlighting
