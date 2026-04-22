@@ -781,6 +781,13 @@ body {
     font-size: 1.15rem;
     font-weight: 600;
     color: var(--primary-blue);
+    margin-bottom: 0.5rem;
+}
+
+.program-note {
+    text-align: center;
+    color: var(--gray-600);
+    font-size: 0.95rem;
     margin-bottom: 3rem;
 }
 
